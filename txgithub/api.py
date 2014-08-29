@@ -240,7 +240,7 @@ class ReposEndpoint(BaseEndpoint):
 
     def createStatus(self,
             repo_user, repo_name, sha, state, target_url=None,
-            description=None, context=None):
+            description=None, context="buildbot"):
         """
         :param sha: Full sha to create the status for.
         :param state: one of the following 'pending', 'success', 'error'
